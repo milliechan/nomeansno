@@ -50,12 +50,29 @@ $(function() {$( document ).ready(function() {
  });
 });
 
+var goToNextResponse = false 
 
 var botActivate = function() {
   $("button").on("click", function(event) {
     event.preventDefault();
-    alert("button was clicked!");
-    printMessage("NO MEANS NO")
+    goToNextResponse = true 
+    for(var i=0; i < botResponses.length; i++) {
+      if(goToNextResponse == true){
+        printMessage(botResponses.shift());
+        goToNextResponse = false
+        break; 
+      }
+    }
   })
-}
+};
+
+var botResponses = [ 
+                    "No means no.",
+                    "Speaking like this is a form of harassment.", 
+                    "The words you are using are inappropriate.",
+                    "Sending frequent or lengthy texts is abusive ", 
+                    "<a href='https://www.buzzfeed.com/juliapugachevsky/this-video-reminds-you-that-relationship-abuse-isnt-always-o?utm_term=.csRGabr7d#.gjOj5Aq6J'>https://www.buzzfeed.com/juliapugachevsky/this-video-reminds-you-that-relationship-abuse-isnt-always-o?utm_term=.csRGabr7d#.gjOj5Aq6J</a>"
+                    ]
+
+
 
