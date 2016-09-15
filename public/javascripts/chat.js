@@ -55,5 +55,7 @@ var botActivate = function() {
   $("button").on("click", function(event) {
     event.preventDefault();
     alert("button was clicked!");
+    printMessage("NO MEANS NO")
   })
 }
+
