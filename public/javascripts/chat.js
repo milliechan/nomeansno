@@ -2,7 +2,9 @@ function printMessage(message) {
   $('#messages').append(message + "<br>");
 }
 
-$(function() {
+$(function() {$( document ).ready(function() {
+  botActivate();
+
     var chatChannel;
     var username;
  
@@ -45,4 +47,13 @@ $(function() {
           }
       });
     });
+ });
 });
+
+
+var botActivate = function() {
+  $("button").on("click", function(event) {
+    event.preventDefault();
+    alert("button was clicked!");
+  })
+}
