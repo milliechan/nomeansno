@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# gem 'bundler'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
@@ -27,6 +29,9 @@ gem 'pg'
 gem 'thin'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
+gem 'twilio-ruby' # for interacting with twilio
+gem 'envyable' # for managing environment variables
 
 # Use Unicorn as the app server
 # gem 'unicorn'

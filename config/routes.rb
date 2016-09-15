@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create]
   get "sessions/destroy", to: 'sessions#destroy', as: 'sign_out'
   root 'accounts#show'
+
+  post 'tokens' => "tokens#create"
 end
 
 
