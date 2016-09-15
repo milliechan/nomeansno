@@ -53,7 +53,7 @@ $(function() {$( document ).ready(function() {
 var goToNextResponse = false 
 
 var botActivate = function() {
-  $("button").on("click", function(event) {
+  $("no-button").on("click", function(event) {
     event.preventDefault();
     goToNextResponse = true 
     for(var i=0; i < botResponses.length; i++) {
