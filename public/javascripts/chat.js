@@ -70,7 +70,7 @@ var botResponses = [
                     "No means no.",
                     "Speaking like this is a form of harassment.", 
                     "The words you are using are inappropriate.",
-                    "Sending frequent or lengthy texts is abusive ", 
+                    "Sending frequent or lengthy texts is abusive.", 
                     "<a href='https://www.buzzfeed.com/juliapugachevsky/this-video-reminds-you-that-relationship-abuse-isnt-always-o?utm_term=.csRGabr7d#.gjOj5Aq6J'>https://www.buzzfeed.com/juliapugachevsky/this-video-reminds-you-that-relationship-abuse-isnt-always-o?utm_term=.csRGabr7d#.gjOj5Aq6J</a>"
                     ]
 
